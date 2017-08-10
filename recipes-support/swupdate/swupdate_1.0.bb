@@ -44,7 +44,7 @@ do_install () {
 }
 
 do_compile() {
-	unset CFLAGS CPPFLAGS CXXFLAGS LDFLAGS
+	unset LDFLAGS
 	oe_runmake swupdate_unstripped
 	cp swupdate_unstripped swupdate
 }
